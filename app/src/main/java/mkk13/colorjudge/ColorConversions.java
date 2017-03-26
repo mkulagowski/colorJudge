@@ -1,4 +1,4 @@
-package com.company;
+package mkk13.colorjudge;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -143,5 +143,4 @@ public class ColorConversions {
 
         return new float[]{H, S, V};
     }
-
 }

@@ -1,16 +1,14 @@
-package com.company;
-
-import org.apache.commons.lang3.StringUtils;
+package mkk13.colorjudge;
 
 /**
  * Created by mkk-1 on 26/03/2017.
  */
 public class Score implements Comparable<Score>{
-    public String name;
+    public Color col;
     public int score;
 
-    public Score(String name, int score) {
-        this.name = name;
+    public Score(Color col, int score) {
+        this.col = col;
         this.score = score;
     }
 

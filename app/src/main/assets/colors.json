@@ -1,0 +1,1498 @@
+[
+    {
+        "name_pl": "akwamaryna",
+        "name_eng": "aquamarine",
+        "color": "#7FFFD4",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "-45.520733",
+            "b": "9.711679",
+            "L": "92.036156"
+        }
+    },
+    {
+        "name_pl": "alabastrowy",
+        "name_eng": "alabaster",
+        "color": "#FAFFFA",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "-2.5158873",
+            "b": "1.7990576",
+            "L": "99.51313"
+        }
+    },
+    {
+        "name_pl": "amarantowy",
+        "name_eng": "amaranth",
+        "color": "#E52B50",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "69.82955",
+            "b": "26.435377",
+            "L": "50.64618"
+        }
+    },
+    {
+        "name_pl": "ametystowy",
+        "name_eng": "amethyst",
+        "color": "#9966CC",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "40.31952",
+            "b": "-45.411263",
+            "L": "52.547333"
+        }
+    },
+    {
+        "name_pl": "antracytowy",
+        "name_eng": "anthracite",
+        "color": "#293133",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "-2.8872633",
+            "b": "-2.4297988",
+            "L": "19.667767"
+        }
+    },
+    {
+        "name_pl": "cytrynowy",
+        "name_eng": "lemon",
+        "color": "#FDFF00",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-22.375572",
+            "b": "94.30067",
+            "L": "96.98466"
+        }
+    },
+    {
+        "name_pl": "błękit paryski\/pruski\/Turnbull'a",
+        "name_eng": "parisian\/prussian\/Turnbull's blue",
+        "color": "#003153",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "-0.41325027",
+            "b": "-24.886572",
+            "L": "19.312939"
+        }
+    },
+    {
+        "name_pl": "bananowy",
+        "name_eng": "banana yellow",
+        "color": "#FFF135",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-13.969356",
+            "b": "83.931366",
+            "L": "93.63592"
+        }
+    },
+    {
+        "name_pl": "beżowy",
+        "name_eng": "beige",
+        "color": "#F5F5DC",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "-4.189074",
+            "b": "12.039921",
+            "L": "95.948875"
+        }
+    },
+    {
+        "name_pl": "biały",
+        "name_eng": "white",
+        "color": "#FFFFFF",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "0.005265851",
+            "b": "-0.010409119",
+            "L": "100.0"
+        }
+    },
+    {
+        "name_pl": "modry\/błękit królewski",
+        "name_eng": "royal blue",
+        "color": "#4169E1",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "26.274042",
+            "b": "-65.270584",
+            "L": "47.832848"
+        }
+    },
+    {
+        "name_pl": "błękit Thénarda",
+        "name_eng": "cobalt blue",
+        "color": "#0047AB",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "22.526285",
+            "b": "-58.448093",
+            "L": "32.803047"
+        }
+    },
+    {
+        "name_pl": "wiśniowy",
+        "name_eng": "maroon",
+        "color": "#800000",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "48.055237",
+            "b": "38.05963",
+            "L": "25.530785"
+        }
+    },
+    {
+        "name_pl": "bordo",
+        "name_eng": "bordeaux\/wine",
+        "color": "#722F37",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "30.365881",
+            "b": "9.718103",
+            "L": "29.12371"
+        }
+    },
+    {
+        "name_pl": "brązowy",
+        "name_eng": "brown",
+        "color": "#964B00",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "27.50197",
+            "b": "50.14705",
+            "L": "40.436604"
+        }
+    },
+    {
+        "name_pl": "brzoskwiniowy",
+        "name_eng": "peach orange",
+        "color": "#FFCC99",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "11.502403",
+            "b": "32.25857",
+            "L": "85.37533"
+        }
+    },
+    {
+        "name_pl": "burgund",
+        "name_eng": "burgundy",
+        "color": "#800020",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "48.904804",
+            "b": "21.293581",
+            "L": "25.84301"
+        }
+    },
+    {
+        "name_pl": "czerwony ugier",
+        "name_eng": "red ochre",
+        "color": "#F8681F",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "51.970024",
+            "b": "63.345577",
+            "L": "61.616257"
+        }
+    },
+    {
+        "name_pl": "żółty ugier",
+        "name_eng": "yellow ochre",
+        "color": "#F8A40E",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "21.638014",
+            "b": "76.21087",
+            "L": "73.89398"
+        }
+    },
+    {
+        "name_pl": "brązowy ugier",
+        "name_eng": "brown ochre",
+        "color": "#562F04",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "14.502404",
+            "b": "31.861816",
+            "L": "23.738209"
+        }
+    },
+    {
+        "name_pl": "bursztynowy",
+        "name_eng": "amber",
+        "color": "#FFBF00",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "10.386125",
+            "b": "83.03571",
+            "L": "81.02792"
+        }
+    },
+    {
+        "name_pl": "bury",
+        "name_eng": "dirt",
+        "color": "#9b7653",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "9.864346",
+            "b": "24.835573",
+            "L": "52.4534"
+        }
+    },
+    {
+        "name_pl": "ceglasty",
+        "name_eng": "brick red",
+        "color": "#E96B39",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "45.813454",
+            "b": "50.122345",
+            "L": "60.010002"
+        }
+    },
+    {
+        "name_pl": "chabrowy",
+        "name_eng": "cornflower blue",
+        "color": "#6495ED",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "9.3427725",
+            "b": "-49.306137",
+            "L": "61.928185"
+        }
+    },
+    {
+        "name_pl": "chamois",
+        "name_eng": "chamois",
+        "color": "#FFFFD2",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "-7.195025",
+            "b": "21.55963",
+            "L": "98.99886"
+        }
+    },
+    {
+        "name_pl": "cielisty",
+        "name_eng": "peach",
+        "color": "#FFE5B4",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "1.8060286",
+            "b": "27.177786",
+            "L": "91.95068"
+        }
+    },
+    {
+        "name_pl": "cyjan",
+        "name_eng": "cyan\/aqua",
+        "color": "#00FFFF",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "-48.07961",
+            "b": "-14.13813",
+            "L": "91.11652"
+        }
+    },
+    {
+        "name_pl": "cyjan (druk)",
+        "name_eng": "printer's cyan",
+        "color": "#00B7EB",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "-20.41104",
+            "b": "-36.676624",
+            "L": "69.37336"
+        }
+    },
+    {
+        "name_pl": "cyklamen",
+        "name_eng": "cyclamen",
+        "color": "#A2007B",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "64.64667",
+            "b": "-22.783329",
+            "L": "36.19798"
+        }
+    },
+    {
+        "name_pl": "cynamonowy",
+        "name_eng": "chocolate",
+        "color": "#D2691E",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "37.05824",
+            "b": "56.743607",
+            "L": "55.986053"
+        }
+    },
+    {
+        "name_pl": "cynober",
+        "name_eng": "cinnabar\/vermillion",
+        "color": "#E34234",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "61.092384",
+            "b": "44.41743",
+            "L": "52.370346"
+        }
+    },
+    {
+        "name_pl": "żółty",
+        "name_eng": "yellow",
+        "color": "#FFFF00",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-21.555906",
+            "b": "94.48248",
+            "L": "97.138245"
+        }
+    },
+    {
+        "name_pl": "czarny",
+        "name_eng": "black",
+        "color": "#000000",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "0.0",
+            "b": "0.0",
+            "L": "0.0"
+        }
+    },
+    {
+        "name_pl": "żółć indyjska",
+        "name_eng": "indian yellow",
+        "color": "#E3A857",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "13.286735",
+            "b": "49.518124",
+            "L": "72.907875"
+        }
+    },
+    {
+        "name_pl": "arylidowy",
+        "name_eng": "arylide\/hansa yellow",
+        "color": "#E9D66B",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-6.7356725",
+            "b": "54.475945",
+            "L": "85.23981"
+        }
+    },
+    {
+        "name_pl": "szkarłat alizarynowy",
+        "name_eng": "alizarin crimson\/madder",
+        "color": "#E32636",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "69.33047",
+            "b": "40.23492",
+            "L": "49.476044"
+        }
+    },
+    {
+        "name_pl": "caput mortuum",
+        "name_eng": "mummy brown\/caput mortum",
+        "color": "#592720",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "22.364693",
+            "b": "15.499353",
+            "L": "22.5811"
+        }
+    },
+    {
+        "name_pl": "czerwień żelazowa",
+        "name_eng": "falu red",
+        "color": "#801818",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "43.257988",
+            "b": "28.381386",
+            "L": "27.595951"
+        }
+    },
+    {
+        "name_pl": "czerwony",
+        "name_eng": "red",
+        "color": "#FF0000",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "80.109314",
+            "b": "67.22007",
+            "L": "53.23288"
+        }
+    },
+    {
+        "name_pl": "kasztanowy",
+        "name_eng": "chestnut",
+        "color": "#954535",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "32.32585",
+            "b": "25.520607",
+            "L": "39.416355"
+        }
+    },
+    {
+        "name_pl": "écru",
+        "name_eng": "écru",
+        "color": "#C2B280",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "-1.7477083",
+            "b": "27.670948",
+            "L": "72.80531"
+        }
+    },
+    {
+        "name_pl": "eozyna",
+        "name_eng": "eosin",
+        "color": "#C35C6F",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "43.0291",
+            "b": "9.131351",
+            "L": "52.29104"
+        }
+    },
+    {
+        "name_pl": "smocza krew",
+        "name_eng": "dragon's blood",
+        "color": "#5D1509",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "31.901989",
+            "b": "25.727081",
+            "L": "19.569962"
+        }
+    },
+    {
+        "name_pl": "kardynalski",
+        "name_eng": "cardinal",
+        "color": "#c41e3a",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "62.90498",
+            "b": "28.481016",
+            "L": "42.7177"
+        }
+    },
+    {
+        "name_pl": "feldgrau",
+        "name_eng": "feldgrau",
+        "color": "#4D5D53",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "-8.405973",
+            "b": "3.6963828",
+            "L": "37.898037"
+        }
+    },
+    {
+        "name_pl": "fioletowy",
+        "name_eng": "violet",
+        "color": "#B803FF",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "88.31473",
+            "b": "-79.952736",
+            "L": "48.85363"
+        }
+    },
+    {
+        "name_pl": "fuksja",
+        "name_eng": "fuchsia",
+        "color": "#FF00FF",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "98.25422",
+            "b": "-60.842987",
+            "L": "60.31993"
+        }
+    },
+    {
+        "name_pl": "fandango",
+        "name_eng": "fandango",
+        "color": "#b53389",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "59.70071",
+            "b": "-18.728718",
+            "L": "44.229424"
+        }
+    },
+    {
+        "name_pl": "grafitowy",
+        "name_eng": "charcoal",
+        "color": "#36454F",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "-3.2477376",
+            "b": "-7.961408",
+            "L": "28.39328"
+        }
+    },
+    {
+        "name_pl": "granatowy",
+        "name_eng": "navy",
+        "color": "#000080",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "47.507763",
+            "b": "-64.70427",
+            "L": "12.975311"
+        }
+    },
+    {
+        "name_pl": "grynszpan",
+        "name_eng": "verdigris",
+        "color": "#00A693",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-40.537342",
+            "b": "-0.3998102",
+            "L": "61.114685"
+        }
+    },
+    {
+        "name_pl": "heban",
+        "name_eng": "ebony",
+        "color": "#555D50",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "-5.864292",
+            "b": "6.410935",
+            "L": "38.444424"
+        }
+    },
+    {
+        "name_pl": "bistr",
+        "name_eng": "bistre",
+        "color": "#3D2B1F",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "6.470319",
+            "b": "11.072778",
+            "L": "19.30302"
+        }
+    },
+    {
+        "name_pl": "jaśminowy",
+        "name_eng": "jasmine\/mellow yellow",
+        "color": "#F8DE7E",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-3.151301",
+            "b": "50.014847",
+            "L": "88.78305"
+        }
+    },
+    {
+        "name_pl": "kanarkowy",
+        "name_eng": "canary yellow",
+        "color": "#FFEF00",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-13.858598",
+            "b": "91.48192",
+            "L": "93.011375"
+        }
+    },
+    {
+        "name_pl": "szkarłat",
+        "name_eng": "scarlet",
+        "color": "#FF2400",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "76.239265",
+            "b": "67.70719",
+            "L": "54.57627"
+        }
+    },
+    {
+        "name_pl": "karmazynowy",
+        "name_eng": "crimson",
+        "color": "#DC143C",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "70.935776",
+            "b": "33.594894",
+            "L": "47.029804"
+        }
+    },
+    {
+        "name_pl": "karminowy",
+        "name_eng": "carmine",
+        "color": "#960018",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "54.35311",
+            "b": "33.13998",
+            "L": "30.759651"
+        }
+    },
+    {
+        "name_pl": "khaki",
+        "name_eng": "khaki",
+        "color": "#c3b091",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "1.9653522",
+            "b": "18.382435",
+            "L": "72.692"
+        }
+    },
+    {
+        "name_pl": "kobaltowy",
+        "name_eng": "cobalt blue",
+        "color": "#0047ab",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "22.526285",
+            "b": "-58.448093",
+            "L": "32.803047"
+        }
+    },
+    {
+        "name_pl": "koniakowy",
+        "name_eng": "cognac",
+        "color": "#a3481b",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "35.09133",
+            "b": "42.99703",
+            "L": "42.000607"
+        }
+    },
+    {
+        "name_pl": "koralowy",
+        "name_eng": "coral",
+        "color": "#FF7F50",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "45.36152",
+            "b": "47.489887",
+            "L": "67.29048"
+        }
+    },
+    {
+        "name_pl": "kość słoniowa",
+        "name_eng": "ivory",
+        "color": "#FFFFF0",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "-2.5469217",
+            "b": "7.152816",
+            "L": "99.63978"
+        }
+    },
+    {
+        "name_pl": "kremowy",
+        "name_eng": "cream",
+        "color": "#FFFDD0",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "-6.489851",
+            "b": "21.823915",
+            "L": "98.45792"
+        }
+    },
+    {
+        "name_pl": "lawendowy",
+        "name_eng": "lavender",
+        "color": "#E6E6FA",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "3.7138543",
+            "b": "-9.671679",
+            "L": "91.82769"
+        }
+    },
+    {
+        "name_pl": "lazurowy",
+        "name_eng": "azure",
+        "color": "#007FFF",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "19.41407",
+            "b": "-71.36368",
+            "L": "54.447548"
+        }
+    },
+    {
+        "name_pl": "liliowy",
+        "name_eng": "lilac",
+        "color": "#C8A2C8",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "20.546139",
+            "b": "-14.138381",
+            "L": "71.07051"
+        }
+    },
+    {
+        "name_pl": "lila róż",
+        "name_eng": "lilac pink",
+        "color": "#DEB4CB",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "18.884813",
+            "b": "-5.870466",
+            "L": "77.5693"
+        }
+    },
+    {
+        "name_pl": "limonkowy",
+        "name_eng": "lime",
+        "color": "#BFFF00",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-46.874714",
+            "b": "89.35698",
+            "L": "92.83743"
+        }
+    },
+    {
+        "name_pl": "chartreuse",
+        "name_eng": "chartreuse",
+        "color": "#DFFF00",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-34.50901",
+            "b": "91.73634",
+            "L": "94.82645"
+        }
+    },
+    {
+        "name_pl": "łososiowy",
+        "name_eng": "salmon",
+        "color": "#FA8072",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "45.234047",
+            "b": "29.086704",
+            "L": "67.25996"
+        }
+    },
+    {
+        "name_pl": "magenta",
+        "name_eng": "magenta",
+        "color": "#FF0090",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "85.78511",
+            "b": "-4.821641",
+            "L": "55.353065"
+        }
+    },
+    {
+        "name_pl": "mahoń",
+        "name_eng": "mahogany",
+        "color": "#C04000",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "49.223625",
+            "b": "56.68965",
+            "L": "45.460117"
+        }
+    },
+    {
+        "name_pl": "makowy (pantone)",
+        "name_eng": "poppy red (pantone)",
+        "color": "#DC343B",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "63.888767",
+            "b": "37.012592",
+            "L": "49.480812"
+        }
+    },
+    {
+        "name_pl": "malachitowy",
+        "name_eng": "malachite",
+        "color": "#0bda51",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-71.53661",
+            "b": "53.64651",
+            "L": "76.562584"
+        }
+    },
+    {
+        "name_pl": "marengo",
+        "name_eng": "marengo",
+        "color": "#4C5866",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "-1.1656725",
+            "b": "-9.602481",
+            "L": "36.883675"
+        }
+    },
+    {
+        "name_pl": "miedziany",
+        "name_eng": "copper",
+        "color": "#B87333",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "21.656176",
+            "b": "45.395233",
+            "L": "54.75244"
+        }
+    },
+    {
+        "name_pl": "miętowy",
+        "name_eng": "mint green",
+        "color": "#98ff98",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-49.97573",
+            "b": "40.005318",
+            "L": "91.89194"
+        }
+    },
+    {
+        "name_pl": "minia",
+        "name_eng": "firebrick\/red lead",
+        "color": "#B22222",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "55.927795",
+            "b": "37.64861",
+            "L": "39.11257"
+        }
+    },
+    {
+        "name_pl": "morski, cyraneczka",
+        "name_eng": "teal",
+        "color": "#008080",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "-28.841562",
+            "b": "-8.481048",
+            "L": "48.256073"
+        }
+    },
+    {
+        "name_pl": "morska zieleń",
+        "name_eng": "seagreen",
+        "color": "#2E8B57",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-39.714256",
+            "b": "20.049467",
+            "L": "51.535355"
+        }
+    },
+    {
+        "name_pl": "mosiądz",
+        "name_eng": "brass",
+        "color": "#B5A642",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "-6.7250576",
+            "b": "52.16143",
+            "L": "67.6427"
+        }
+    },
+    {
+        "name_pl": "niebieski",
+        "name_eng": "blue",
+        "color": "#0000FF",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "79.19666",
+            "b": "-107.863686",
+            "L": "32.302586"
+        }
+    },
+    {
+        "name_pl": "oberżynowy",
+        "name_eng": "eggplant",
+        "color": "#614051",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "17.261766",
+            "b": "-4.3772283",
+            "L": "31.352444"
+        }
+    },
+    {
+        "name_pl": "ugier",
+        "name_eng": "ochre",
+        "color": "#CC7722",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "27.339903",
+            "b": "56.824013",
+            "L": "58.175858"
+        }
+    },
+    {
+        "name_pl": "oliwkowy",
+        "name_eng": "olive",
+        "color": "#808000",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-12.93076",
+            "b": "56.677284",
+            "L": "51.868332"
+        }
+    },
+    {
+        "name_pl": "pomarańczowy",
+        "name_eng": "orange",
+        "color": "#FFA500",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "23.936052",
+            "b": "78.95631",
+            "L": "74.93219"
+        }
+    },
+    {
+        "name_pl": "orzechowy",
+        "name_eng": "barley corn",
+        "color": "#BD9460",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "8.872413",
+            "b": "33.268772",
+            "L": "64.03371"
+        }
+    },
+    {
+        "name_pl": "palisander",
+        "name_eng": "rosewood",
+        "color": "#65000B",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "40.873978",
+            "b": "24.937195",
+            "L": "19.186077"
+        }
+    },
+    {
+        "name_pl": "patynowy",
+        "name_eng": "patina",
+        "color": "#6EBE9F",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-31.800652",
+            "b": "8.029015",
+            "L": "71.31344"
+        }
+    },
+    {
+        "name_pl": "perłowy",
+        "name_eng": "pearl",
+        "color": "#EAE0C8",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "-0.52699506",
+            "b": "12.967916",
+            "L": "89.38075"
+        }
+    },
+    {
+        "name_pl": "pistacjowy",
+        "name_eng": "pistachio",
+        "color": "#93C572",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-31.207247",
+            "b": "36.408165",
+            "L": "74.413376"
+        }
+    },
+    {
+        "name_pl": "platynowy",
+        "name_eng": "platinum",
+        "color": "#E5E4E2",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "-0.01356799",
+            "b": "1.0822425",
+            "L": "90.61345"
+        }
+    },
+    {
+        "name_pl": "płowy",
+        "name_eng": "buff",
+        "color": "#F0DC82",
+        "baseColor": "biel",
+        "Lab": {
+            "a": "-4.9601007",
+            "b": "46.51435",
+            "L": "87.64188"
+        }
+    },
+    {
+        "name_pl": "popielaty",
+        "name_eng": "ash gray",
+        "color": "#B2BEB5",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "-5.837049",
+            "b": "3.1072235",
+            "L": "75.840416"
+        }
+    },
+    {
+        "name_pl": "purpurowy",
+        "name_eng": "purple",
+        "color": "#800080",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "58.93984",
+            "b": "-36.49793",
+            "L": "29.7821"
+        }
+    },
+    {
+        "name_pl": "purpura tyryjska",
+        "name_eng": "tyrian purple",
+        "color": "#66023C",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "43.882057",
+            "b": "-5.9878983",
+            "L": "20.806366"
+        }
+    },
+    {
+        "name_pl": "róż indyjski",
+        "name_eng": "indian red",
+        "color": "#CD5C5C",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "44.83605",
+            "b": "22.109999",
+            "L": "53.39115"
+        }
+    },
+    {
+        "name_pl": "czerwień wenecka",
+        "name_eng": "venetian red",
+        "color": "#C80815",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "66.16424",
+            "b": "48.54309",
+            "L": "42.011086"
+        }
+    },
+    {
+        "name_pl": "różowy",
+        "name_eng": "pink",
+        "color": "#FFC0CB",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "24.149649",
+            "b": "3.3153894",
+            "L": "83.5848"
+        }
+    },
+    {
+        "name_pl": "terra cotta",
+        "name_eng": "terra cotta",
+        "color": "#E2725B",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "41.60181",
+            "b": "32.794178",
+            "L": "60.74517"
+        }
+    },
+    {
+        "name_pl": "rubinowy",
+        "name_eng": "ruby",
+        "color": "#E0115F",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "74.05817",
+            "b": "14.056977",
+            "L": "48.35366"
+        }
+    },
+    {
+        "name_pl": "rubinowa czerwień (pantone)",
+        "name_eng": "ruby red (pantone)",
+        "color": "#9B111E",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "53.245777",
+            "b": "32.02692",
+            "L": "32.838947"
+        }
+    },
+    {
+        "name_pl": "rudy",
+        "name_eng": "tawny\/tenné",
+        "color": "#CD5700",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "43.591908",
+            "b": "61.15972",
+            "L": "51.60524"
+        }
+    },
+    {
+        "name_pl": "seledynowy",
+        "name_eng": "celadon",
+        "color": "#ACE1AF",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-26.616014",
+            "b": "19.050243",
+            "L": "84.85146"
+        }
+    },
+    {
+        "name_pl": "sepia",
+        "name_eng": "sepia",
+        "color": "#704214",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "15.985095",
+            "b": "34.6736",
+            "L": "32.682446"
+        }
+    },
+    {
+        "name_pl": "sjena",
+        "name_eng": "sienna",
+        "color": "#882d17",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "37.721138",
+            "b": "34.08734",
+            "L": "32.197266"
+        }
+    },
+    {
+        "name_pl": "sjena palona",
+        "name_eng": "burnt sienna",
+        "color": "#E97451",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "42.58805",
+            "b": "40.02033",
+            "L": "62.005096"
+        }
+    },
+    {
+        "name_pl": "słomkowy",
+        "name_eng": "straw",
+        "color": "#E4D96F",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-9.951286",
+            "b": "52.971443",
+            "L": "85.638794"
+        }
+    },
+    {
+        "name_pl": "spiżowy",
+        "name_eng": "bronze",
+        "color": "#CD7F32",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "24.019974",
+            "b": "52.32962",
+            "L": "60.237816"
+        }
+    },
+    {
+        "name_pl": "srebrny",
+        "name_eng": "silver",
+        "color": "#C0C0C0",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "0.004242713",
+            "b": "-0.008405463",
+            "L": "77.70436"
+        }
+    },
+    {
+        "name_pl": "stare złoto",
+        "name_eng": "old gold",
+        "color": "#CFB53B",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-3.7512152",
+            "b": "62.31176",
+            "L": "73.951775"
+        }
+    },
+    {
+        "name_pl": "szafirowy",
+        "name_eng": "sapphire",
+        "color": "#0F52BA",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "21.782227",
+            "b": "-60.04779",
+            "L": "37.264286"
+        }
+    },
+    {
+        "name_pl": "szafranowy",
+        "name_eng": "saffron",
+        "color": "#F4C430",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "3.8904176",
+            "b": "74.145676",
+            "L": "81.2511"
+        }
+    },
+    {
+        "name_pl": "szary",
+        "name_eng": "gray",
+        "color": "#808080",
+        "baseColor": "szarość",
+        "Lab": {
+            "a": "0.0031527996",
+            "b": "-0.006242518",
+            "L": "53.585014"
+        }
+    },
+    {
+        "name_pl": "zieleń Veronese\u2019a\/szwajnfurcka\/paryska",
+        "name_eng": "Veronese\/Schweinfurt\/paris green",
+        "color": "#50C878",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-51.24957",
+            "b": "30.251913",
+            "L": "72.475174"
+        }
+    },
+    {
+        "name_pl": "śliwkowy",
+        "name_eng": "plum",
+        "color": "#50344F",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "17.731148",
+            "b": "-11.443433",
+            "L": "25.939342"
+        }
+    },
+    {
+        "name_pl": "turkusowy",
+        "name_eng": "turquoise",
+        "color": "#30D5C8",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "-43.194824",
+            "b": "-5.3306627",
+            "L": "77.51168"
+        }
+    },
+    {
+        "name_pl": "tycjan",
+        "name_eng": "titian",
+        "color": "#FF8000",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "42.83238",
+            "b": "74.02598",
+            "L": "67.050095"
+        }
+    },
+    {
+        "name_pl": "trawiasty",
+        "name_eng": "lawn green",
+        "color": "#7CFC00",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-67.85902",
+            "b": "84.95482",
+            "L": "88.87798"
+        }
+    },
+    {
+        "name_pl": "ultramaryna",
+        "name_eng": "ultramarine",
+        "color": "#3f00ff",
+        "baseColor": "błękit",
+        "Lab": {
+            "a": "79.98968",
+            "b": "-104.04837",
+            "L": "34.552753"
+        }
+    },
+    {
+        "name_pl": "umbra",
+        "name_eng": "umber",
+        "color": "#635147",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "5.775656",
+            "b": "8.686657",
+            "L": "35.969734"
+        }
+    },
+    {
+        "name_pl": "umbra palona",
+        "name_eng": "burnt umber",
+        "color": "#8A3324",
+        "baseColor": "brąz",
+        "Lab": {
+            "a": "36.191086",
+            "b": "28.499949",
+            "L": "33.77018"
+        }
+    },
+    {
+        "name_pl": "wrzosowy",
+        "name_eng": "heather",
+        "color": "#DBB0EF",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "26.722187",
+            "b": "-25.526854",
+            "L": "77.48533"
+        }
+    },
+    {
+        "name_pl": "indygo",
+        "name_eng": "indigo",
+        "color": "#4B0082",
+        "baseColor": "fiolet",
+        "Lab": {
+            "a": "51.69484",
+            "b": "-53.31982",
+            "L": "20.46962"
+        }
+    },
+    {
+        "name_pl": "zieleń butelkowa",
+        "name_eng": "bottle green",
+        "color": "#326647",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-25.296503",
+            "b": "12.287609",
+            "L": "38.96014"
+        }
+    },
+    {
+        "name_pl": "zieleń RGB",
+        "name_eng": "RGB green",
+        "color": "#00FF00",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-86.18463",
+            "b": "83.18116",
+            "L": "87.73703"
+        }
+    },
+    {
+        "name_pl": "zieleń chromowa\/szmaragdowa\/Guignet'a (Pantone)",
+        "name_eng": "viridian\/emerald\/Guignet's green (Pantone)",
+        "color": "#009698",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-31.727764",
+            "b": "-10.564483",
+            "L": "56.167496"
+        }
+    },
+    {
+        "name_pl": "zieleń kobaltowa",
+        "name_eng": "cobalt green",
+        "color": "#136207",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-39.95512",
+            "b": "39.563",
+            "L": "35.769993"
+        }
+    },
+    {
+        "name_pl": "zielony",
+        "name_eng": "green",
+        "color": "#008000",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-51.699646",
+            "b": "49.897953",
+            "L": "46.228817"
+        }
+    },
+    {
+        "name_pl": "złoty",
+        "name_eng": "gold",
+        "color": "#FFD700",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-1.9242227",
+            "b": "87.13715",
+            "L": "86.92858"
+        }
+    },
+    {
+        "name_pl": "żółć kadmowa",
+        "name_eng": "cadmium yellow",
+        "color": "#FFF600",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "-17.253134",
+            "b": "92.78571",
+            "L": "94.811005"
+        }
+    },
+    {
+        "name_pl": "pomarańcz kadmowa",
+        "name_eng": "cadmium orange",
+        "color": "#ED872D",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "32.865326",
+            "b": "61.45921",
+            "L": "66.153015"
+        }
+    },
+    {
+        "name_pl": "czerwień kadmowa",
+        "name_eng": "cadmium red",
+        "color": "#E30022",
+        "baseColor": "czerwień",
+        "Lab": {
+            "a": "73.77392",
+            "b": "49.150692",
+            "L": "47.55477"
+        }
+    },
+    {
+        "name_pl": "zieleń kadmowa",
+        "name_eng": "cadmium green",
+        "color": "#006B3C",
+        "baseColor": "zieleń",
+        "Lab": {
+            "a": "-38.522125",
+            "b": "19.058498",
+            "L": "39.31245"
+        }
+    },
+    {
+        "name_pl": "gumiguta",
+        "name_eng": "gamboge",
+        "color": "#E49B0F",
+        "baseColor": "żółć",
+        "Lab": {
+            "a": "17.895332",
+            "b": "71.82146",
+            "L": "69.44898"
+        }
+    }
+]

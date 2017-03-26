@@ -1,4 +1,4 @@
-package com.company;
+package mkk13.colorjudge;
 
 import org.json.simple.JSONObject;
 
@@ -29,7 +29,7 @@ public class Color {
     }
 
     private void initFromHex(String hex) {
-        this.hex = hex;
+        this.hex = hex.toUpperCase();
         this.rgb = ColorConversions.hex2rgb(hex);
         this.xyz = ColorConversions.rgb2xyz(this.rgb);
         this.lab = ColorConversions.xyz2lab(this.xyz);
@@ -49,7 +49,7 @@ public class Color {
             if (!obj.containsKey("lab") || !obj.containsKey("xyz")) {
                 initFromHex(colHex);
             } else {
-                this.hex = colHex;
+                this.hex = colHex.toUpperCase();
                 this.rgb = ColorConversions.hex2rgb(hex);
                 JSONObject lab = (JSONObject) obj.get("lab");
                 this.lab = new float[] {Float.valueOf(lab.get("l").toString()),
