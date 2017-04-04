@@ -51,12 +51,21 @@ public class Comparator{
     }
 
     public static ArrayList<Score> findColors(Color searchColor, Collection<Color> colors) {
-        System.out.println("Delta max = " + deltaEMax);
         ArrayList<Score> searchScore = new ArrayList<>();
         for (Color i : colors) {
             searchScore.add(new Score(i, deltaEInt(searchColor.lab, i.lab)));
         }
         Collections.sort(searchScore, Collections.reverseOrder());
+        return searchScore;
+    }
+
+    public static ArrayList<Score> getColors(Collection<Color> colors) {
+        ArrayList<Score> searchScore = new ArrayList<>();
+        int counter = 0;
+        for (Color i : colors) {
+            searchScore.add(new Score(i, counter++));
+        }
+        Collections.sort(searchScore);
         return searchScore;
     }
 }

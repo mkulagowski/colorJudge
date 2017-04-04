@@ -5,7 +5,7 @@ import org.json.simple.JSONObject;
 /**
  * Created by mkk-1 on 25/03/2017.
  */
-public class Color {
+public class Color implements java.io.Serializable {
     public String name_pl;
     public String name_eng;
     public String hex;
@@ -61,5 +61,42 @@ public class Color {
                                         Float.valueOf(lab.get("z").toString())};
             }
         }
+    }
+
+    public String[] getHexStringDetails() {
+        return new String[] {"", hex, ""};
+    }
+
+    public String[] getRgbStringDetails() {
+        String[] res = new String[] {"R: ", "G: ", "B: "};
+        for (int i = 0; i < 3; i++) {
+            res[i] += rgb[i];
+        }
+        return res;
+    }
+
+    public String[] getLabStringDetails() {
+        String[] res = new String[] {"L: ", "a: ", "b: "};
+        for (int i = 0; i < 3; i++) {
+            res[i] += lab[i];
+        }
+        return res;
+    }
+
+    public String[] getXyzStringDetails() {
+        String[] res = new String[] {"X: ", "Y: ", "Z: "};
+        for (int i = 0; i < 3; i++) {
+            res[i] += xyz[i];
+        }
+        return res;
+    }
+
+    public String[] getHsvStringDetails() {
+        float[] hsv = ColorConversions.rgb2hsv(rgb);
+        String[] res = new String[] {"H: ", "S: ", "V: "};
+        for (int i = 0; i < 3; i++) {
+            res[i] += hsv[i];
+        }
+        return res;
     }
 }

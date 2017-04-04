@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/color_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Czerwony"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textAlignment="center"/>
+
+    <include
+        android:id="@+id/details_hex"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/detailstemplate"/>
+
+    <include
+        android:id="@+id/details_rgb"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/detailstemplate"/>
+
+    <include
+        android:id="@+id/details_hsv"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/detailstemplate"/>
+
+    <include
+        android:id="@+id/details_lab"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/detailstemplate"/>
+
+    <include
+        android:id="@+id/details_xyz"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/detailstemplate"/>
+</LinearLayout>

@@ -1,66 +1,42 @@
-package mkk13.colorjudge;
+package mkk13.colorjudge.panels;
 
 import android.app.Activity;
-
-import android.content.res.AssetManager;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.SeekBar;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
+import android.view.View;
+import android.widget.Button;
 
-public class W2A extends Activity
+import java.util.ArrayList;
+import java.util.List;
+
+import mkk13.colorjudge.ColorBase;
+import mkk13.colorjudge.DbPanel;
+import mkk13.colorjudge.R;
+
+public class MainPanel extends Activity implements View.OnClickListener
 {
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        final SeekBar red = (SeekBar) findViewById(R.id.seekBarR);
+        setContentView(R.layout.mainpanel);
+        ColorBase.setContext(getApplicationContext());
+        /*final SeekBar red = (SeekBar) findViewById(R.id.seekBarR);
         final SeekBar green = (SeekBar) findViewById(R.id.seekBarG);
         final SeekBar blue = (SeekBar) findViewById(R.id.seekBarB);
         final ListView res = (ListView) findViewById(R.id.listview);
         final LinearLayout lo1 = (LinearLayout) findViewById(R.id.linearLayout);
         final LinearLayout lo2 = (LinearLayout) findViewById(R.id.linearLayout2);
-        final ColorAdapter customAdapter = new ColorAdapter(this, R.layout.colortemplate);
-        res .setAdapter(customAdapter);
-        final HashMap<String, Color> colors;
-        {
-            JSONParser parser = new JSONParser();
-            Object obj = new Object();
+        final ColorAdapter customAdapter = new ColorAdapter(this, R.layout.scoretemplate);*/
+        List<Button> buttonList = new ArrayList<>();
+        buttonList.add((Button) findViewById(R.id.act_button_color));
+        buttonList.add((Button) findViewById(R.id.act_button_name));
+        buttonList.add((Button) findViewById(R.id.act_button_judge));
+        buttonList.add((Button) findViewById(R.id.act_button_db));
 
-            try {
-                AssetManager assetManager = getApplicationContext().getAssets();
-                InputStream file = assetManager.open("colors.json");
-                InputStreamReader fileReader = new InputStreamReader(file);
-                //System.out.print(fs);
-                obj = parser.parse(fileReader);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            JSONArray jsonObject = (JSONArray) obj;
-
-            HashMap<String, Color> colMap = new HashMap<>();
-
-            for (Object i : jsonObject) {
-                JSONObject jo = (JSONObject) i;
-                Color col = new Color(jo);
-                colMap.put(col.name_pl, col);
-            }
-            colors = colMap;
+        for (Button btn : buttonList) {
+            btn.setOnClickListener(this);
         }
-
-
-        //ImageView androidImage = (ImageView) findViewById(R.id.android);
-        //androidImage.setBackgroundResource(R.drawable.android_animate);
-        //androidAnimation = (AnimationDrawable) androidImage.getBackground();
-        //final Button btnAnimate = (Button) findViewById(R.id.animate);
+        /*
         SeekBar.OnSeekBarChangeListener ocl;
         ocl = new SeekBar.OnSeekBarChangeListener()
         {
@@ -88,7 +64,7 @@ public class W2A extends Activity
                 int bVal = blue.getProgress();
                 String hexVal = "#" + Integer.toHexString(0x100 | rVal).substring(1) + Integer.toHexString(0x100 | gVal).substring(1) + Integer.toHexString(0x100 | bVal).substring(1);
                 Color search = new Color(hexVal, "?", "?");
-                ArrayList<Score> results = Comparator.findColors(search, colors.values());
+                ArrayList<Score> results = Comparator.findColors(search, ColorBase.getInstance().colors.values());
                 customAdapter.clear();
                 customAdapter.addAll(results.subList(0, 13));
             }
@@ -96,5 +72,31 @@ public class W2A extends Activity
         red.setOnSeekBarChangeListener(ocl);
         green.setOnSeekBarChangeListener(ocl);
         blue.setOnSeekBarChangeListener(ocl);
+        */
     }
+
+    @Override
+    public void onClick(View v) {
+        Class intentClass = null;
+        switch(v.getId()){
+            case(R.id.act_button_color):
+                intentClass = ColorPanel.class;
+                break;
+            case(R.id.act_button_name):
+                intentClass = NamePanel.class;
+                break;
+            case(R.id.act_button_judge):
+                break;
+            case(R.id.act_button_db):
+                intentClass = DbPanel.class;
+                break;
+        }
+
+        if (intentClass != null) {
+            Intent myIntent = new Intent(MainPanel.this, intentClass);
+            MainPanel.this.startActivity(myIntent);
+        }
+    }
+
+
 }

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">ColorJudge</string>
+
+    <string name="activity_color">Find color</string>
+    <string name="activity_name">Find name</string>
+    <string name="activity_judge">Judge color</string>
+    <string name="activity_db">Database</string>
+
+    <string name="camera_not_supported">Camera not supported!</string>
+    <string name="crop_not_supported">Image cropping not supported!</string>
+
+    <string name="speech_textedit_hint">Color name</string>
+    <string name="speech_prompt">Speak the color, please.</string>
+    <string name="speech_not_supported">Speech recognition not supported!</string>
+
 </resources>

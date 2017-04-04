@@ -20,6 +20,14 @@ public class ColorConversions {
         }
     }
 
+    public static int hex2int(String colorStr) {
+        return android.graphics.Color.parseColor(colorStr);
+    }
+
+    public static String int2hex(int color) {
+        return "#" + Integer.toHexString(0x10000000 | color).substring(2);
+    }
+
     // XYZ
     private static double XYZprep(int rgbCol) {
         double col = rgbCol / 255D;
