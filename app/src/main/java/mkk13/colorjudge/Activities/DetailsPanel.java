@@ -1,4 +1,4 @@
-package mkk13.colorjudge.panels;
+package mkk13.colorjudge.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;

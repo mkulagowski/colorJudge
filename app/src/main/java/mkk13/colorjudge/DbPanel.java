@@ -8,7 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import mkk13.colorjudge.panels.DetailsPanel;
+import mkk13.colorjudge.Activities.DetailsPanel;
+import mkk13.colorjudge.Adapters.ColorAdapter;
 
 /**
  * Created by mkk-1 on 31/03/2017.

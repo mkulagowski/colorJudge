@@ -1,4 +1,4 @@
-package mkk13.colorjudge.panels;
+package mkk13.colorjudge.Activities;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -15,11 +15,11 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import mkk13.colorjudge.Adapters.ScoreAdapter;
 import mkk13.colorjudge.ColorBase;
 import mkk13.colorjudge.Comparator;
 import mkk13.colorjudge.R;
 import mkk13.colorjudge.Score;
-import mkk13.colorjudge.ScoreAdapter;
 import mkk13.colorjudge.Utils;
 
 

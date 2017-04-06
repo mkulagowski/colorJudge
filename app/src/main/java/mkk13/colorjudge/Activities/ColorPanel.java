@@ -1,11 +1,11 @@
-package mkk13.colorjudge.panels;
+package mkk13.colorjudge.Activities;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -27,13 +27,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import mkk13.colorjudge.Adapters.ScoreAdapter;
 import mkk13.colorjudge.Color;
 import mkk13.colorjudge.ColorBase;
 import mkk13.colorjudge.ColorConversions;
 import mkk13.colorjudge.Comparator;
 import mkk13.colorjudge.R;
 import mkk13.colorjudge.Score;
-import mkk13.colorjudge.ScoreAdapter;
 import mkk13.colorjudge.Utils;
 
 
@@ -50,7 +50,6 @@ public class ColorPanel extends Activity implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.colorpanel);
         customAdapter = new ScoreAdapter(this, R.layout.scoretemplate);
 
@@ -58,8 +57,8 @@ public class ColorPanel extends Activity implements View.OnClickListener {
         list.setAdapter(customAdapter);
 
         List<Button> buttonList = new ArrayList<>();
-        buttonList.add((Button)findViewById(R.id.image_capture_btn));
-        buttonList.add((Button)findViewById(R.id.gallery_btn));
+        buttonList.add((Button) findViewById(R.id.image_capture_btn));
+        buttonList.add((Button) findViewById(R.id.gallery_btn));
         for (Button btn : buttonList) {
             btn.setOnClickListener(this);
         }
@@ -71,22 +70,23 @@ public class ColorPanel extends Activity implements View.OnClickListener {
                 promptImageCapture();
                 break;
             case R.id.gallery_btn:
-                performCrop();
+                promptImageGallery();
                 break;
         }
     }
 
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == Activity.RESULT_OK) {
             //File croppedImageFile = new File(getFilesDir(), "test.jpg");
             //user is returning from capturing an image using the camera
             switch(requestCode) {
                 case Utils.IMAGE_CAPTURE_INTENT:
-
                     performCrop();
                     break;
                 case Utils.IMAGE_GALLERY_INTENT:
-                    
+                    picUri = data.getData();
+                    mCurrentPhotoPath = picUri.getPath();
+                    performCrop();
                     break;
                 case Utils.IMAGE_CROP_INTENT:
                     //Bundle extras = data.getExtras();
@@ -113,22 +113,25 @@ public class ColorPanel extends Activity implements View.OnClickListener {
         }
     }
 
-    private void promptImageCapture() {
-        Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        //we will handle the returned data in onActivityResult
-        if (captureIntent.resolveActivity(getPackageManager()) != null) {
-            File photoFile = null;
-            photoFile = createImageFile();
+    protected void promptImageCapture() {
+        PackageManager packageManager = getPackageManager();
+        if(packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA) == false){
+            Toast.makeText(this, getString(R.string.camera_not_supported), Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Camera exists? Then proceed...
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            // Create the File where the photo should go.
+            // If you don't do this, you may get a crash in some devices.
+            File photoFile = createImageFile();
             // Continue only if the File was successfully created
             if (photoFile != null) {
                 picUri = Uri.fromFile(photoFile);
-                captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, picUri);
-                try {
-                    startActivityForResult(captureIntent, Utils.IMAGE_CAPTURE_INTENT);
-                }
-                catch(ActivityNotFoundException ex){
-                    Toast.makeText(this, getString(R.string.camera_not_supported), Toast.LENGTH_SHORT).show();
-                }
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, picUri);
+                startActivityForResult(takePictureIntent, Utils.IMAGE_CAPTURE_INTENT);
             }
         }
     }
@@ -147,9 +150,10 @@ public class ColorPanel extends Activity implements View.OnClickListener {
     }
 
     private void performCrop(){
-        CropImageIntentBuilder cropImage = new CropImageIntentBuilder(64, 64, picUri);
+        Uri oldUri = picUri;
+        CropImageIntentBuilder cropImage = new CropImageIntentBuilder(64, 64, Uri.fromFile(createImageFile()));
         cropImage.setOutlineColor(0xFF03A9F4);
-        cropImage.setSourceImage(picUri);
+        cropImage.setSourceImage(oldUri);
 
         try {
             startActivityForResult(cropImage.getIntent(this), Utils.IMAGE_CROP_INTENT);
@@ -166,7 +170,7 @@ public class ColorPanel extends Activity implements View.OnClickListener {
             String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
             String imageFileName = "JPEG_" + timeStamp + "_";
             //File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-            File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+            File storageDir = this.getExternalFilesDir(Environment.DIRECTORY_PICTURES);
             image = File.createTempFile(
                     imageFileName,  /* prefix */
                     ".jpg",         /* suffix */
