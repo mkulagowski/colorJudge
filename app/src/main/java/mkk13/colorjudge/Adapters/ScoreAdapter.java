@@ -43,17 +43,17 @@ public class ScoreAdapter extends ArrayAdapter<Score> {
         Score score = getItem(position);
 
         if (score != null) {
-            Color col = score.col;
+            Color col = score.mColor;
             TextView hex = (TextView) v.findViewById(R.id.hex);
             TextView scoretxt = (TextView) v.findViewById(R.id.score);
             TextView name = (TextView) v.findViewById(R.id.name);
 
             if (hex != null && name != null && scoretxt != null) {
-                hex.setText(col.hex);
-                scoretxt.setText(score.score + "%");
-                name.setText(col.name_pl);
+                hex.setText(col.getHex());
+                scoretxt.setText(score.mScore + "%");
+                name.setText(col.getName());
 
-                Integer colVal = ColorConversions.hex2int(col.hex);
+                Integer colVal = ColorConversions.hex2int(col.getHex());
 
                 hex.setBackgroundColor(colVal);
                 scoretxt.setBackgroundColor(colVal);

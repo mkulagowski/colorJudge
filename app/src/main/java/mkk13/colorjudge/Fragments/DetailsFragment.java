@@ -12,27 +12,31 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
-import mkk13.colorjudge.Activities.GuessColorActivity;
 import mkk13.colorjudge.Activities.DatabaseActivity;
+import mkk13.colorjudge.Activities.GuessColorActivity;
 import mkk13.colorjudge.Activities.GuessNameActivity;
 import mkk13.colorjudge.R;
 
 /**
- * Created by mkk-1 on 05/04/2017.
+ * Created by mkk-1 on 06/04/2017.
  */
 
-public class GuessMainFragment extends Fragment implements View.OnClickListener {
+public class DetailsFragment extends Fragment implements View.OnClickListener {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         return inflater.inflate(R.layout.mainpanel, container, false);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         Activity act = getActivity();
+
+
+
         List<Button> buttonList = new ArrayList<>();
         buttonList.add((Button) act.findViewById(R.id.act_button_color));
         buttonList.add((Button) act.findViewById(R.id.act_button_name));

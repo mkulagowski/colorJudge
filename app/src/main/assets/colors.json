@@ -1397,8 +1397,8 @@
         }
     },
     {
-        "name_pl": "zieleń chromowa\/szmaragdowa\/Guignet'a (Pantone)",
-        "name_eng": "viridian\/emerald\/Guignet's green (Pantone)",
+        "name_pl": "zieleń chromowa\/szmaragdowa\/Guignet'a",
+        "name_eng": "viridian\/emerald\/Guignet's green",
         "color": "#009698",
         "baseColor": "zieleń",
         "Lab": {

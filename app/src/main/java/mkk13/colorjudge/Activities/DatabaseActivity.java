@@ -1,4 +1,4 @@
-package mkk13.colorjudge;
+package mkk13.colorjudge.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,14 +8,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import mkk13.colorjudge.Activities.DetailsPanel;
 import mkk13.colorjudge.Adapters.ColorAdapter;
+import mkk13.colorjudge.ColorDatabase;
+import mkk13.colorjudge.ColorUtils;
+import mkk13.colorjudge.R;
 
 /**
  * Created by mkk-1 on 31/03/2017.
  */
 
-public class DbPanel extends Activity implements AdapterView.OnItemClickListener {
+public class DatabaseActivity extends Activity implements AdapterView.OnItemClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -29,14 +31,15 @@ public class DbPanel extends Activity implements AdapterView.OnItemClickListener
         list.setAdapter(customAdapter);
         list.setOnItemClickListener(this);
 
-        customAdapter.addAll(Comparator.getColors(ColorBase.getInstance().colors.values()));
+        customAdapter.addAll(ColorUtils.getSortedColors(ColorDatabase.getInstance().getColors().values()));
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent = new Intent(DbPanel.this, DetailsPanel.class);
+        Intent intent = new Intent(DatabaseActivity.this, DetailsActivity.class);
         TextView txt = (TextView) view.findViewById(R.id.name);
         intent.putExtra("colorId", txt.getText());
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_up, R.anim.stay);
     }
 }

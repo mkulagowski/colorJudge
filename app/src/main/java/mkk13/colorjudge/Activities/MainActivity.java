@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 
-import mkk13.colorjudge.ColorBase;
+import mkk13.colorjudge.ColorDatabase;
 import mkk13.colorjudge.Fragments.MainSlideFragment;
 import mkk13.colorjudge.R;
 
@@ -18,7 +18,7 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ColorBase.setContext(this);
+        ColorDatabase.setContext(this);
         if (savedInstanceState == null) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             MainSlideFragment fragment = new MainSlideFragment();

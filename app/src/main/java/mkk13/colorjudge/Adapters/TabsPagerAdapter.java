@@ -3,6 +3,7 @@ package mkk13.colorjudge.Adapters;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.view.View;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +13,7 @@ import mkk13.colorjudge.Fragments.LearnMainFragment;
 
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
-    private static final List<Class<? extends Fragment>> tabs = Arrays.asList(GuessMainFragment.class, LearnMainFragment.class);
+    private static final List<Class<? extends Fragment>> tabs = Arrays.<Class<? extends Fragment>>asList(GuessMainFragment.class, LearnMainFragment.class);
     private static final int tabCount = tabs.size();
     private static final List<String> tabNames = Arrays.asList( "Guess", "Learn" );
     public TabsPagerAdapter(FragmentManager fm) {

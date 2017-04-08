@@ -42,15 +42,15 @@ public class ColorAdapter extends ArrayAdapter<Score> {
         Score score = getItem(position);
 
         if (score != null) {
-            Color col = score.col;
+            Color col = score.mColor;
             TextView hex = (TextView) v.findViewById(R.id.hex);
             TextView name = (TextView) v.findViewById(R.id.name);
 
             if (hex != null && name != null) {
-                hex.setText(col.hex);
-                name.setText(col.name_pl);
+                hex.setText(col.getHex());
+                name.setText(col.getName());
 
-                Integer colVal = ColorConversions.hex2int(col.hex);
+                Integer colVal = ColorConversions.hex2int(col.getHex());
 
                 hex.setBackgroundColor(colVal);
                 name.setBackgroundColor(colVal);

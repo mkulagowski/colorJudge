@@ -9,22 +9,24 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_gravity="center"
+        android:layout_weight="0.5"
         android:gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="0dp">
 
         <Button
-            android:id="@+id/act_button_color"
+            android:id="@+id/act_button_randoms"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Total randoms" />
 
         <Button
-            android:id="@+id/act_button_name"
+            android:id="@+id/act_button_similars"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Similar Colors"
             android:layout_marginTop="20dp"/>
+
 
     </LinearLayout>
 </LinearLayout>

@@ -6,8 +6,11 @@
     <string name="activity_judge">Judge color</string>
     <string name="activity_db">Database</string>
 
+    <string name="camera_chooser">"Select picture"</string>
     <string name="camera_not_supported">Camera not supported!</string>
+    <string name="gallery_not_supported">Gallery access not supported!</string>
     <string name="crop_not_supported">Image cropping not supported!</string>
+    <string name="image_file_create_error">Cannot save image file!</string>
 
     <string name="speech_textedit_hint">Color name</string>
     <string name="speech_prompt">Speak the color, please.</string>

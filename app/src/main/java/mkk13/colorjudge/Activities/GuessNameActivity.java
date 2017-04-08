@@ -16,8 +16,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import mkk13.colorjudge.Adapters.ScoreAdapter;
-import mkk13.colorjudge.ColorBase;
-import mkk13.colorjudge.Comparator;
+import mkk13.colorjudge.ColorDatabase;
+import mkk13.colorjudge.ColorUtils;
 import mkk13.colorjudge.R;
 import mkk13.colorjudge.Score;
 import mkk13.colorjudge.Utils;
@@ -27,7 +27,7 @@ import mkk13.colorjudge.Utils;
  * Created by mkk-1 on 26/03/2017.
  */
 
-public class NamePanel extends Activity implements View.OnClickListener {
+public class GuessNameActivity extends Activity implements View.OnClickListener {
     private ScoreAdapter customAdapter;
     private EditText textEdit;
 
@@ -55,10 +55,10 @@ public class NamePanel extends Activity implements View.OnClickListener {
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
             @Override
-            public void onTextChanged(CharSequence s, int start,
+            public void onTextChanged(CharSequence text, int start,
                                       int before, int count) {
-                if(s.length() != 0) {
-                    ArrayList<Score> results = Comparator.findNamesPl(s.toString().toLowerCase(), ColorBase.getInstance().colors.values());
+                if(text.length() != 0) {
+                    ArrayList<Score> results = ColorUtils.getMatchingNames(text.toString().toLowerCase(), ColorDatabase.getInstance().getColors().values());
                     customAdapter.clear();
                     customAdapter.addAll(results.subList(0, Utils.COLORS_IN_LIST));
                 } else {

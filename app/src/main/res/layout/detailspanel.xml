@@ -13,9 +13,10 @@
         android:text="Czerwony"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:textSize="20dp"
+        android:textSize="35dp"
         android:textAllCaps="true"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"/>
 
     <include
         android:id="@+id/details_hex"

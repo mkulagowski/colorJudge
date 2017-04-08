@@ -2,46 +2,52 @@ package mkk13.colorjudge;
 
 import org.json.simple.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by mkk-1 on 25/03/2017.
  */
 public class Color implements java.io.Serializable {
-    public String name_pl;
-    public String name_eng;
-    public String hex;
-    public int[] rgb;
-    public float[] lab;
-    public float[] xyz;
+    private Map<Utils.Language, String> mNameMap = new HashMap<>();
+    private String mHex;
+    private String mBase;
+    private int[] mRgb;
+    private float[] mLab;
+    private float[] mXyz;
 
     public Color() {
-        name_pl = "";
-        name_eng = "";
-        hex = "";
-        rgb = new int[] {0, 0, 0};
-        lab = new float[] {0, 0, 0};
-        xyz = new float[] {0, 0, 0};
+        mHex = "";
+        mBase = "";
+        mRgb = new int[] {0, 0, 0};
+        mLab = new float[] {0, 0, 0};
+        mXyz = new float[] {0, 0, 0};
     }
 
-    public Color(String hex, String namePl, String nameEng) {
-        this.name_pl = namePl;
-        this.name_eng = nameEng;
+    public Color(String hex, String namePl, String nameEng, String mBase) {
+        mNameMap.put(Utils.Language.POLISH, namePl);
+        mNameMap.put(Utils.Language.ENGLISH, nameEng);
         initFromHex(hex);
     }
 
     private void initFromHex(String hex) {
-        this.hex = hex.toUpperCase();
-        this.rgb = ColorConversions.hex2rgb(hex);
-        this.xyz = ColorConversions.rgb2xyz(this.rgb);
-        this.lab = ColorConversions.xyz2lab(this.xyz);
+        mHex = hex.toUpperCase();
+        mRgb = ColorConversions.hex2rgb(hex);
+        mXyz = ColorConversions.rgb2xyz(mRgb);
+        mLab = ColorConversions.xyz2lab(mXyz);
     }
 
     public Color(JSONObject obj) {
         if (obj.containsKey("name_pl")) {
-            this.name_pl = obj.get("name_pl").toString();
+            mNameMap.put(Utils.Language.POLISH, obj.get("name_pl").toString());
         }
 
         if (obj.containsKey("name_eng")) {
-            this.name_eng = obj.get("name_eng").toString();
+            mNameMap.put(Utils.Language.ENGLISH, obj.get("name_eng").toString());
+        }
+
+        if (obj.containsKey("baseColor")) {
+            mBase = obj.get("baseColor").toString();
         }
 
         if (obj.containsKey("color")) {
@@ -49,28 +55,56 @@ public class Color implements java.io.Serializable {
             if (!obj.containsKey("lab") || !obj.containsKey("xyz")) {
                 initFromHex(colHex);
             } else {
-                this.hex = colHex.toUpperCase();
-                this.rgb = ColorConversions.hex2rgb(hex);
+                mHex = colHex.toUpperCase();
+                mRgb = ColorConversions.hex2rgb(mHex);
                 JSONObject lab = (JSONObject) obj.get("lab");
-                this.lab = new float[] {Float.valueOf(lab.get("l").toString()),
+                mLab = new float[] {Float.valueOf(lab.get("l").toString()),
                                         Float.valueOf(lab.get("a").toString()),
                                         Float.valueOf(lab.get("b").toString())};
                 JSONObject xyz = (JSONObject) obj.get("xyz");
-                this.xyz = new float[] {Float.valueOf(lab.get("x").toString()),
+                mXyz = new float[] {Float.valueOf(lab.get("x").toString()),
                                         Float.valueOf(lab.get("y").toString()),
                                         Float.valueOf(lab.get("z").toString())};
             }
         }
     }
 
+    public String getName() {
+        return mNameMap.get(Utils.LANGUAGE);
+    }
+
+    public String getName(Utils.Language lang) {
+        return mNameMap.get(lang);
+    }
+
+    public String getBase() {
+        return mBase;
+    }
+
+    public String getHex() {
+        return mHex;
+    }
+
+    public int[] getRGB() {
+        return mRgb;
+    }
+
+    public float[] getLAB() {
+        return mLab;
+    }
+
+    public float[] getXYZ() {
+        return mXyz;
+    }
+
     public String[] getHexStringDetails() {
-        return new String[] {"", hex, ""};
+        return new String[] {"", mHex, ""};
     }
 
     public String[] getRgbStringDetails() {
         String[] res = new String[] {"R: ", "G: ", "B: "};
         for (int i = 0; i < 3; i++) {
-            res[i] += rgb[i];
+            res[i] += mRgb[i];
         }
         return res;
     }
@@ -78,7 +112,7 @@ public class Color implements java.io.Serializable {
     public String[] getLabStringDetails() {
         String[] res = new String[] {"L: ", "a: ", "b: "};
         for (int i = 0; i < 3; i++) {
-            res[i] += lab[i];
+            res[i] += mLab[i];
         }
         return res;
     }
@@ -86,13 +120,13 @@ public class Color implements java.io.Serializable {
     public String[] getXyzStringDetails() {
         String[] res = new String[] {"X: ", "Y: ", "Z: "};
         for (int i = 0; i < 3; i++) {
-            res[i] += xyz[i];
+            res[i] += mXyz[i];
         }
         return res;
     }
 
     public String[] getHsvStringDetails() {
-        float[] hsv = ColorConversions.rgb2hsv(rgb);
+        float[] hsv = ColorConversions.rgb2hsv(mRgb);
         String[] res = new String[] {"H: ", "S: ", "V: "};
         for (int i = 0; i < 3; i++) {
             res[i] += hsv[i];

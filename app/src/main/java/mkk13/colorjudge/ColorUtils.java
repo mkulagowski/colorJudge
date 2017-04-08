@@ -5,13 +5,13 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Created by mkk-1 on 26/03/2017.
  */
-public class Comparator{
+public class ColorUtils {
     private static final double deltaEMax = Math.sqrt(Math.pow(100D, 2D) + Math.pow(255D, 2D) + Math.pow(255D, 2D));
-
 
     private static int jaroWinklerDistanceInt(String stringA, String stringB) {
         return (int)(100 * StringUtils.getJaroWinklerDistance(stringA, stringB));
@@ -32,40 +32,31 @@ public class Comparator{
         return Math.sqrt(res);
     }
 
-    public static ArrayList<Score> findNamesPl(String searchName, Collection<Color> colors) {
+    public static ArrayList<Score> getMatchingNames(String searchName, Collection<Color> colors) {
         ArrayList<Score> searchScore = new ArrayList<>();
         for (Color i : colors) {
-            searchScore.add(new Score(i, jaroWinklerDistanceInt(searchName, i.name_pl)));
+            searchScore.add(new Score(i, jaroWinklerDistanceInt(searchName, i.getName())));
         }
         Collections.sort(searchScore, Collections.reverseOrder());
         return searchScore;
     }
 
-    public static ArrayList<Score> findNamesEng(String searchName, Collection<Color> colors) {
+    public static ArrayList<Score> getMatchingColors(Color searchColor, Collection<Color> colors) {
         ArrayList<Score> searchScore = new ArrayList<>();
         for (Color i : colors) {
-            searchScore.add(new Score(i, jaroWinklerDistanceInt(searchName, i.name_eng)));
+            searchScore.add(new Score(i, deltaEInt(searchColor.getLAB(), i.getLAB())));
         }
         Collections.sort(searchScore, Collections.reverseOrder());
         return searchScore;
     }
 
-    public static ArrayList<Score> findColors(Color searchColor, Collection<Color> colors) {
+    public static ArrayList<Score> getSortedColors(Collection<Color> colors) {
         ArrayList<Score> searchScore = new ArrayList<>();
-        for (Color i : colors) {
-            searchScore.add(new Score(i, deltaEInt(searchColor.lab, i.lab)));
-        }
-        Collections.sort(searchScore, Collections.reverseOrder());
-        return searchScore;
-    }
 
-    public static ArrayList<Score> getColors(Collection<Color> colors) {
-        ArrayList<Score> searchScore = new ArrayList<>();
-        int counter = 0;
-        for (Color i : colors) {
-            searchScore.add(new Score(i, counter++));
+        for (Color col : colors) {
+            searchScore.add(new Score(col));
         }
-        Collections.sort(searchScore);
+        Collections.sort(searchScore, Score.byNameComparator);
         return searchScore;
     }
 }
