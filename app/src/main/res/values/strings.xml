@@ -5,6 +5,8 @@
     <string name="activity_name">Find name</string>
     <string name="activity_judge">Judge color</string>
     <string name="activity_db">Database</string>
+    <string name="activity_learn_random">Random colors</string>
+    <string name="activity_learn_similar">Similar colors</string>
 
     <string name="camera_chooser">"Select picture"</string>
     <string name="camera_not_supported">Camera not supported!</string>
@@ -15,5 +17,11 @@
     <string name="speech_textedit_hint">Color name</string>
     <string name="speech_prompt">Speak the color, please.</string>
     <string name="speech_not_supported">Speech recognition not supported!</string>
+
+    <string name="learn_score">Score: %-3d</string>
+    <string name="learn_question">Which color is %s?</string>
+
+    <string name="tab_guess">Guess</string>
+    <string name="tab_learn">Learn</string>
 
 </resources>

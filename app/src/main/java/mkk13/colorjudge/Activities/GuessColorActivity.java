@@ -28,6 +28,7 @@ import mkk13.colorjudge.Adapters.ScoreAdapter;
 import mkk13.colorjudge.Color;
 import mkk13.colorjudge.ColorDatabase;
 import mkk13.colorjudge.ColorConversions;
+import mkk13.colorjudge.ColorDetailsListener;
 import mkk13.colorjudge.ColorUtils;
 import mkk13.colorjudge.R;
 import mkk13.colorjudge.Score;
@@ -54,6 +55,7 @@ public class GuessColorActivity extends Activity implements View.OnClickListener
 
         ListView list = (ListView) findViewById(R.id.listview);
         list.setAdapter(mCustomAdapter);
+        list.setOnItemClickListener(new ColorDetailsListener(this));
 
         List<Button> buttonList = new ArrayList<>();
         buttonList.add((Button) findViewById(R.id.image_capture_btn));
@@ -89,6 +91,7 @@ public class GuessColorActivity extends Activity implements View.OnClickListener
                     Bitmap image = BitmapFactory.decodeFile(mCurrentPhotoPath);
                     ImageView imageView = (ImageView) findViewById(R.id.imageView);
                     imageView.setImageBitmap(image);
+                    imageView.setAlpha(1f);
 
                     image = Bitmap.createScaledBitmap(image, 1, 1, false);
                     int imageColor = image.getPixel(0,0);

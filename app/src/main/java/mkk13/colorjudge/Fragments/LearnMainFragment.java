@@ -1,27 +1,19 @@
 package mkk13.colorjudge.Fragments;
 
 
-import android.animation.Animator;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import mkk13.colorjudge.Activities.DatabaseActivity;
-import mkk13.colorjudge.Activities.GuessColorActivity;
-import mkk13.colorjudge.Activities.GuessNameActivity;
 import mkk13.colorjudge.Activities.LearnRandomActivity;
+import mkk13.colorjudge.Activities.LearnSimilarActivity;
 import mkk13.colorjudge.R;
 
 public class LearnMainFragment extends Fragment implements View.OnClickListener {
@@ -56,14 +48,7 @@ public class LearnMainFragment extends Fragment implements View.OnClickListener 
                 intentClass = LearnRandomActivity.class;
                 break;
             case(R.id.act_button_similars):
-
-                /*
-                ImageView star = (ImageView) getActivity().findViewById(R.id.starOfEternalSuccess);
-                Animation anim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.stars);
-
-                star.clearAnimation();
-                star.startAnimation(anim);
-                //anim.start();*/
+                intentClass = LearnSimilarActivity.class;
                 break;
         }
 

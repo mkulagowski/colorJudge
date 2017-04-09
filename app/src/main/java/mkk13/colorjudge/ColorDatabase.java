@@ -38,6 +38,14 @@ public class ColorDatabase {
         return colors.get(Utils.LANGUAGE);
     }
 
+    public List<Color> getColorsPerBase(String base) {
+        return colorsPerBase.get(base);
+    }
+
+    public List<String> getColorBases() {
+        return new ArrayList<>(colorsPerBase.keySet());
+    }
+
     private ColorDatabase() {
         JSONParser parser = new JSONParser();
         Object obj = new Object();

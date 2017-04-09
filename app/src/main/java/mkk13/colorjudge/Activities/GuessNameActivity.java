@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 import mkk13.colorjudge.Adapters.ScoreAdapter;
 import mkk13.colorjudge.ColorDatabase;
+import mkk13.colorjudge.ColorDetailsListener;
 import mkk13.colorjudge.ColorUtils;
 import mkk13.colorjudge.R;
 import mkk13.colorjudge.Score;
@@ -41,6 +42,7 @@ public class GuessNameActivity extends Activity implements View.OnClickListener 
 
         ListView list = (ListView) findViewById(R.id.listview);
         list.setAdapter(customAdapter);
+        list.setOnItemClickListener(new ColorDetailsListener(this));
 
         Button captureBtn = (Button)findViewById(R.id.speech_capture_btn);
         captureBtn.setOnClickListener(this);

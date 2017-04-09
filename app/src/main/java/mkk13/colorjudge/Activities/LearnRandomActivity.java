@@ -1,11 +1,9 @@
 package mkk13.colorjudge.Activities;
 
-import android.animation.Animator;
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewAnimationUtils;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -13,9 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 
 import mkk13.colorjudge.Color;
@@ -29,11 +24,7 @@ import mkk13.colorjudge.Utils;
  */
 
 public class LearnRandomActivity extends Activity implements View.OnClickListener {
-
-    private static final String SCORE = "Score: ";
-    private static final String COL_QUESTION = "Which color is ";
-    private static int mScore = 0;
-    private static LearnRandomActivity instance;
+    private int mScore = 0;
     private Color primaryColor;
     private List<Button> buttonList = new ArrayList<>();
     private List<ImageView> starsList = new ArrayList<>();
@@ -42,7 +33,6 @@ public class LearnRandomActivity extends Activity implements View.OnClickListene
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        instance = this;
         setContentView(R.layout.learnrandompanel);
 
         buttonList.add((Button) findViewById(R.id.learnTL));
@@ -61,10 +51,14 @@ public class LearnRandomActivity extends Activity implements View.OnClickListene
         refreshColors();
     }
 
+    protected List<Color> getRandomColors() {
+        List<Color> cols = new ArrayList<Color>(ColorDatabase.getInstance().getColors().values());
+        return Utils.shuffle(cols, 4);
+    }
+
     private void refreshColors() {
         // Shuffle colors and pick an array of 4
-        List<Color> cols = new ArrayList<Color>(ColorDatabase.getInstance().getColors().values());
-        List<Color> colArray = Utils.shuffle(cols, 4);
+        List<Color> colArray = getRandomColors();
 
         // First color will be the 'test color'
         primaryColor = colArray.get((int) (Math.random() * 4));
@@ -76,17 +70,24 @@ public class LearnRandomActivity extends Activity implements View.OnClickListene
             buttonList.get(i).startAnimation(fadein);
         }
 
+        for (Button btn : buttonList) {
+            btn.setClickable(true);
+        }
+
         refreshTexts();
     }
 
     private void refreshTexts() {
         TextView score = (TextView) findViewById(R.id.learn_score);
         TextView quest = (TextView) findViewById(R.id.learn_question);
-        score.setText(SCORE + mScore);
-        quest.setText(COL_QUESTION + primaryColor.getName() + '?');
+        score.setText(String.format(getString(R.string.learn_score), mScore));
+        quest.setText(String.format(getString(R.string.learn_question), primaryColor.getName()));
     }
 
     public void onClick(View clicked) {
+        for (Button btn : buttonList) {
+            btn.setClickable(false);
+        }
         final Animation animFadeStar = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.stars_fadeout);
         final Animation animFade = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fadeout);
 
@@ -136,8 +137,8 @@ public class LearnRandomActivity extends Activity implements View.OnClickListene
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                LearnRandomActivity.instance.mScore = newScore;
-                LearnRandomActivity.instance.refreshColors();
+                mScore = newScore;
+                refreshColors();
             }
         });
     }

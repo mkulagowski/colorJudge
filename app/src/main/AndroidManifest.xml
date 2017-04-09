@@ -30,6 +30,7 @@
         <activity android:name=".Activities.DatabaseActivity"/>
         <activity android:name=".Activities.DetailsActivity"/>
         <activity android:name=".Activities.LearnRandomActivity"/>
+        <activity android:name=".Activities.LearnSimilarActivity"/>
         <activity android:name="com.android.camera.CropImage"/>
     </application>
 

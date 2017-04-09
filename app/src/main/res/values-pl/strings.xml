@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Sędzia Kolorów</string>
+
+    <string name="activity_color">Znajdź kolor</string>
+    <string name="activity_name">Znajdź nazwę</string>
+    <string name="activity_judge">Sędzia kolorów</string>
+    <string name="activity_db">Baza danych</string>
+    <string name="activity_learn_random">Całkiem różne</string>
+    <string name="activity_learn_similar">Podobne</string>
+
+    <string name="camera_chooser">Wybierz obraz</string>
+    <string name="camera_not_supported">Aparat nie wspierany!</string>
+    <string name="gallery_not_supported">Galeria nie wspierana!</string>
+    <string name="crop_not_supported">Przycinanie obrazów nie wspierane!</string>
+    <string name="image_file_create_error">Nie można zapisać obrazu!</string>
+
+    <string name="speech_textedit_hint">Nazwa koloru</string>
+    <string name="speech_prompt">Wypowiedz nazwę koloru, proszę.</string>
+    <string name="speech_not_supported">Rozpoznawanie mowy nie wspierane!</string>
+
+    <string name="learn_score">Wynik: %-3d</string>
+    <string name="learn_question">Który kolor to %s</string>
+
+    <string name="tab_guess">Zgaduj</string>
+    <string name="tab_learn">Ucz się</string>
+</resources>

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import mkk13.colorjudge.Adapters.ColorAdapter;
 import mkk13.colorjudge.ColorDatabase;
+import mkk13.colorjudge.ColorDetailsListener;
 import mkk13.colorjudge.ColorUtils;
 import mkk13.colorjudge.R;
 
@@ -17,7 +18,7 @@ import mkk13.colorjudge.R;
  * Created by mkk-1 on 31/03/2017.
  */
 
-public class DatabaseActivity extends Activity implements AdapterView.OnItemClickListener {
+public class DatabaseActivity extends Activity  {
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -29,17 +30,10 @@ public class DatabaseActivity extends Activity implements AdapterView.OnItemClic
 
         ListView list = (ListView) findViewById(R.id.listview);
         list.setAdapter(customAdapter);
-        list.setOnItemClickListener(this);
+        list.setOnItemClickListener(new ColorDetailsListener(this));
 
         customAdapter.addAll(ColorUtils.getSortedColors(ColorDatabase.getInstance().getColors().values()));
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent = new Intent(DatabaseActivity.this, DetailsActivity.class);
-        TextView txt = (TextView) view.findViewById(R.id.name);
-        intent.putExtra("colorId", txt.getText());
-        startActivity(intent);
-        overridePendingTransition(R.anim.slide_up, R.anim.stay);
-    }
+
 }
