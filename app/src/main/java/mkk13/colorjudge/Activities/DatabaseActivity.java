@@ -1,12 +1,8 @@
 package mkk13.colorjudge.Activities;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import mkk13.colorjudge.Adapters.ColorAdapter;
 import mkk13.colorjudge.ColorDatabase;
@@ -25,8 +21,8 @@ public class DatabaseActivity extends Activity  {
     {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.dbpanel);
-        ColorAdapter customAdapter = new ColorAdapter(this, R.layout.colortemplate);
+        setContentView(R.layout.database_panel);
+        ColorAdapter customAdapter = new ColorAdapter(this, R.layout.color_adapter);
 
         ListView list = (ListView) findViewById(R.id.listview);
         list.setAdapter(customAdapter);

@@ -66,8 +66,8 @@
         }
     },
     {
-        "name_pl": "błękit paryski\/pruski\/Turnbull'a",
-        "name_eng": "parisian\/prussian\/Turnbull's blue",
+        "name_pl": "błękit paryski \/ pruski \/ Turnbull'a",
+        "name_eng": "parisian \/ prussian \/ Turnbull's blue",
         "color": "#003153",
         "baseColor": "błękit",
         "Lab": {
@@ -110,7 +110,7 @@
         }
     },
     {
-        "name_pl": "modry\/błękit królewski",
+        "name_pl": "modry \/ błękit królewski",
         "name_eng": "royal blue",
         "color": "#4169E1",
         "baseColor": "błękit",
@@ -144,7 +144,7 @@
     },
     {
         "name_pl": "bordo",
-        "name_eng": "bordeaux\/wine",
+        "name_eng": "bordeaux \/ wine",
         "color": "#722F37",
         "baseColor": "czerwień",
         "Lab": {
@@ -287,7 +287,7 @@
     },
     {
         "name_pl": "cyjan",
-        "name_eng": "cyan\/aqua",
+        "name_eng": "cyan \/ aqua",
         "color": "#00FFFF",
         "baseColor": "błękit",
         "Lab": {
@@ -331,7 +331,7 @@
     },
     {
         "name_pl": "cynober",
-        "name_eng": "cinnabar\/vermillion",
+        "name_eng": "cinnabar \/ vermillion",
         "color": "#E34234",
         "baseColor": "czerwień",
         "Lab": {
@@ -375,7 +375,7 @@
     },
     {
         "name_pl": "arylidowy",
-        "name_eng": "arylide\/hansa yellow",
+        "name_eng": "arylide \/ hansa yellow",
         "color": "#E9D66B",
         "baseColor": "żółć",
         "Lab": {
@@ -386,7 +386,7 @@
     },
     {
         "name_pl": "szkarłat alizarynowy",
-        "name_eng": "alizarin crimson\/madder",
+        "name_eng": "alizarin crimson \/ madder",
         "color": "#E32636",
         "baseColor": "czerwień",
         "Lab": {
@@ -397,7 +397,7 @@
     },
     {
         "name_pl": "caput mortuum",
-        "name_eng": "mummy brown\/caput mortum",
+        "name_eng": "mummy brown \/ caput mortum",
         "color": "#592720",
         "baseColor": "brąz",
         "Lab": {
@@ -584,7 +584,7 @@
     },
     {
         "name_pl": "jaśminowy",
-        "name_eng": "jasmine\/mellow yellow",
+        "name_eng": "jasmine \/ mellow yellow",
         "color": "#F8DE7E",
         "baseColor": "żółć",
         "Lab": {
@@ -859,7 +859,7 @@
     },
     {
         "name_pl": "minia",
-        "name_eng": "firebrick\/red lead",
+        "name_eng": "firebrick \/ red lead",
         "color": "#B22222",
         "baseColor": "czerwień",
         "Lab": {
@@ -1134,7 +1134,7 @@
     },
     {
         "name_pl": "rudy",
-        "name_eng": "tawny\/tenné",
+        "name_eng": "tawny \/ tenné",
         "color": "#CD5700",
         "baseColor": "brąz",
         "Lab": {
@@ -1265,8 +1265,8 @@
         }
     },
     {
-        "name_pl": "zieleń Veronese\u2019a\/szwajnfurcka\/paryska",
-        "name_eng": "Veronese\/Schweinfurt\/paris green",
+        "name_pl": "zieleń Veronese\u2019a \/ szwajnfurcka \/ paryska",
+        "name_eng": "Veronese \/ Schweinfurt \/ paris green",
         "color": "#50C878",
         "baseColor": "zieleń",
         "Lab": {
@@ -1397,8 +1397,8 @@
         }
     },
     {
-        "name_pl": "zieleń chromowa\/szmaragdowa\/Guignet'a",
-        "name_eng": "viridian\/emerald\/Guignet's green",
+        "name_pl": "zieleń chromowa \/ szmaragdowa \/ Guignet'a",
+        "name_eng": "viridian \/ emerald \/ Guignet's green",
         "color": "#009698",
         "baseColor": "zieleń",
         "Lab": {

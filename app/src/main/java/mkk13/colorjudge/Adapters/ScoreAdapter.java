@@ -37,7 +37,7 @@ public class ScoreAdapter extends ArrayAdapter<Score> {
         if (v == null) {
             LayoutInflater vi;
             vi = LayoutInflater.from(getContext());
-            v = vi.inflate(R.layout.scoretemplate, null);
+            v = vi.inflate(R.layout.score_adapter, null);
         }
 
         Score score = getItem(position);
@@ -54,10 +54,16 @@ public class ScoreAdapter extends ArrayAdapter<Score> {
                 name.setText(col.getName());
 
                 Integer colVal = ColorConversions.hex2int(col.getHex());
+                Integer invertCol = ColorConversions.hex2int(ColorConversions.int2invert(colVal));
 
                 hex.setBackgroundColor(colVal);
+                hex.setTextColor(invertCol);
+
                 scoretxt.setBackgroundColor(colVal);
+                scoretxt.setTextColor(invertCol);
+
                 name.setBackgroundColor(colVal);
+                name.setTextColor(invertCol);
             }
         }
 

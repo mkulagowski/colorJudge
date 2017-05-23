@@ -13,15 +13,15 @@ import java.util.Comparator;
 public class ColorUtils {
     private static final double deltaEMax = Math.sqrt(Math.pow(100D, 2D) + Math.pow(255D, 2D) + Math.pow(255D, 2D));
 
-    private static int jaroWinklerDistanceInt(String stringA, String stringB) {
+    public static int jaroWinklerDistanceInt(String stringA, String stringB) {
         return (int)(100 * StringUtils.getJaroWinklerDistance(stringA, stringB));
     }
 
-    private static int deltaEInt(float[] lab1, float[] lab2) {
+    public static int deltaEInt(float[] lab1, float[] lab2) {
         return 100 - (int)(100 * (deltaE(lab1, lab2) / deltaEMax));
     }
 
-    private static double deltaE(float[] lab1, float[] lab2) {
+    public static double deltaE(float[] lab1, float[] lab2) {
         if (lab1.length != 3 || lab2.length != 3) {
             return Double.MAX_VALUE;
         }

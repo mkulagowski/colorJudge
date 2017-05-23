@@ -37,8 +37,9 @@ public class GuessNameActivity extends Activity implements View.OnClickListener 
     {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.namepanel);
-        customAdapter = new ScoreAdapter(this, R.layout.scoretemplate);
+        setContentView(R.layout.guess_name_panel);
+        customAdapter = new ScoreAdapter(this, R.layout.score_adapter);
+        customAdapter.addAll(ColorUtils.getSortedColors(ColorDatabase.getInstance().getColors().values()));
 
         ListView list = (ListView) findViewById(R.id.listview);
         list.setAdapter(customAdapter);
@@ -60,11 +61,13 @@ public class GuessNameActivity extends Activity implements View.OnClickListener 
             public void onTextChanged(CharSequence text, int start,
                                       int before, int count) {
                 if(text.length() != 0) {
-                    ArrayList<Score> results = ColorUtils.getMatchingNames(text.toString().toLowerCase(), ColorDatabase.getInstance().getColors().values());
+                    //ArrayList<Score> results = ColorUtils.getMatchingNames(text.toString().toLowerCase(), ColorDatabase.getInstance().getColors().values());
                     customAdapter.clear();
-                    customAdapter.addAll(results.subList(0, Utils.COLORS_IN_LIST));
+                    //customAdapter.addAll(results.subList(0, Utils.COLORS_IN_LIST));
+                    customAdapter.addAll(ColorUtils.getMatchingNames(text.toString().toLowerCase(), ColorDatabase.getInstance().getColors().values()));
                 } else {
                     customAdapter.clear();
+                    customAdapter.addAll(ColorUtils.getSortedColors(ColorDatabase.getInstance().getColors().values()));
                 }
             }
         });

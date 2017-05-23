@@ -3,6 +3,7 @@ package mkk13.colorjudge;
 import org.json.simple.JSONObject;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -112,7 +113,7 @@ public class Color implements java.io.Serializable {
     public String[] getLabStringDetails() {
         String[] res = new String[] {"L: ", "a: ", "b: "};
         for (int i = 0; i < 3; i++) {
-            res[i] += mLab[i];
+            res[i] += String.format(Locale.getDefault(), "%.3f", mLab[i]);
         }
         return res;
     }
@@ -120,7 +121,7 @@ public class Color implements java.io.Serializable {
     public String[] getXyzStringDetails() {
         String[] res = new String[] {"X: ", "Y: ", "Z: "};
         for (int i = 0; i < 3; i++) {
-            res[i] += mXyz[i];
+            res[i] += String.format(Locale.getDefault(), "%.3f", mXyz[i]);
         }
         return res;
     }
@@ -129,7 +130,7 @@ public class Color implements java.io.Serializable {
         float[] hsv = ColorConversions.rgb2hsv(mRgb);
         String[] res = new String[] {"H: ", "S: ", "V: "};
         for (int i = 0; i < 3; i++) {
-            res[i] += hsv[i];
+            res[i] += String.format(Locale.getDefault(), "%.3f", hsv[i]);
         }
         return res;
     }

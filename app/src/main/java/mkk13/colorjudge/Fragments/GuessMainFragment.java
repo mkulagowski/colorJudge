@@ -12,10 +12,11 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
-import mkk13.colorjudge.Activities.GuessColorActivity;
-import mkk13.colorjudge.Activities.DatabaseActivity;
 import mkk13.colorjudge.Activities.GuessNameActivity;
+import mkk13.colorjudge.Activities.JudgeActivity;
+import mkk13.colorjudge.Activities.JudgePreActivity;
 import mkk13.colorjudge.R;
+import mkk13.colorjudge.Activities.GuessColorActivity;
 
 /**
  * Created by mkk-1 on 05/04/2017.
@@ -27,7 +28,7 @@ public class GuessMainFragment extends Fragment implements View.OnClickListener 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.mainpanel, container, false);
+        return inflater.inflate(R.layout.guess_main_fragment, container, false);
     }
 
     @Override
@@ -37,7 +38,6 @@ public class GuessMainFragment extends Fragment implements View.OnClickListener 
         buttonList.add((Button) act.findViewById(R.id.act_button_color));
         buttonList.add((Button) act.findViewById(R.id.act_button_name));
         buttonList.add((Button) act.findViewById(R.id.act_button_judge));
-        buttonList.add((Button) act.findViewById(R.id.act_button_db));
 
         for (Button btn : buttonList) {
             btn.setOnClickListener(this);
@@ -55,9 +55,7 @@ public class GuessMainFragment extends Fragment implements View.OnClickListener 
                 intentClass = GuessNameActivity.class;
                 break;
             case(R.id.act_button_judge):
-                break;
-            case(R.id.act_button_db):
-                intentClass = DatabaseActivity.class;
+                intentClass = JudgePreActivity.class;
                 break;
         }
 

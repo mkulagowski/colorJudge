@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Animation frames are wheel0.png through wheel5.png
+    files inside the res/drawable/ folder -->
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected"
+    android:oneshot="false">
+    <item android:drawable="@drawable/crown0" android:duration="50" />
+    <item android:drawable="@drawable/crown1" android:duration="50" />
+    <item android:drawable="@drawable/crown2" android:duration="50" />
+    <item android:drawable="@drawable/crown3" android:duration="50" />
+    <item android:drawable="@drawable/crown4" android:duration="50" />
+    <item android:drawable="@drawable/crown5" android:duration="50" />
+    <item android:drawable="@drawable/crown6" android:duration="50" />
+    <item android:drawable="@drawable/crown7" android:duration="50" />
+    <item android:drawable="@drawable/crown8" android:duration="50" />
+    <item android:drawable="@drawable/crown9" android:duration="50" />
+    <item android:drawable="@drawable/crown10" android:duration="50" />
+    <item android:drawable="@drawable/crown11" android:duration="50" />
+    <item android:drawable="@drawable/crown12" android:duration="50" />
+    <item android:drawable="@drawable/crown13" android:duration="50" />
+    <item android:drawable="@drawable/crown14" android:duration="50" />
+    <item android:drawable="@drawable/crown15" android:duration="50" />
+    <item android:drawable="@drawable/crown16" android:duration="50" />
+    <item android:drawable="@drawable/crown17" android:duration="50" />
+    <item android:drawable="@drawable/crown18" android:duration="50" />
+    <item android:drawable="@drawable/crown19" android:duration="50" />
+    <item android:drawable="@drawable/crown20" android:duration="50" />
+    <item android:drawable="@drawable/crown21" android:duration="50" />
+    <item android:drawable="@drawable/crown22" android:duration="50" />
+    <item android:drawable="@drawable/crown23" android:duration="50" />
+    <item android:drawable="@drawable/crown24" android:duration="50" />
+    <item android:drawable="@drawable/crown25" android:duration="50" />
+    <item android:drawable="@drawable/crown26" android:duration="50" />
+    <item android:drawable="@drawable/crown27" android:duration="50" />
+    <item android:drawable="@drawable/crown28" android:duration="50" />
+    <item android:drawable="@drawable/crown29" android:duration="50" />
+</animation-list>

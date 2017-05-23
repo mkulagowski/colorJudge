@@ -2,11 +2,16 @@ package mkk13.colorjudge;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.os.Environment;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
+
+import static java.text.DateFormat.getDateTimeInstance;
 
 /**
  * Created by mkk-1 on 31/03/2017.
@@ -18,6 +23,8 @@ public class Utils {
     public static final int IMAGE_GALLERY_INTENT = 2;
     public static final int IMAGE_CROP_INTENT = 3;
     public static final int SOUND_CAPTURE_INTENT = 4;
+    public static final int JUDGE_SOUND_CAPTURE_INTENT1 = 5;
+    public static final int JUDGE_SOUND_CAPTURE_INTENT2 = 6;
     public static Language LANGUAGE = Language.ENGLISH;
 
     public enum Language {

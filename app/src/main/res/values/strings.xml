@@ -24,4 +24,14 @@
     <string name="tab_guess">Guess</string>
     <string name="tab_learn">Learn</string>
 
+    <string name="permission_camera_rationale">Camera is needed to take photos.</string>
+    <string name="permission_storageR_rationale">Read storage permission is needed to access gallery.</string>
+    <string name="permission_storageW_rationale">Write storage permission is needed to properly crop takes photos.</string>
+    <string name="permission_audio_rationale">Microphone is needed to audio input.</string>
+    <string name="permission_denied">Permission denied.</string>
+    <string name="permission_never_askagain">Permissions denied and never asked for again.</string>
+
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+
 </resources>

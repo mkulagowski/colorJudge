@@ -24,8 +24,18 @@ public class ColorConversions {
         return android.graphics.Color.parseColor(colorStr);
     }
 
+    private static final int HALFHEX = hex2int("#000000") / 2;
+
     public static String int2hex(int color) {
         return "#" + Integer.toHexString(0x10000000 | color).substring(2);
+    }
+
+    public static String hex2invert(String hexcolor){
+        return int2invert(hex2int(hexcolor));
+    }
+
+    public static String int2invert(int color){
+        return (color < HALFHEX) ? "#FFFFFF" : "#000000";
     }
 
     // XYZ
@@ -106,10 +116,10 @@ public class ColorConversions {
     }
 
     public static float[] rgb2hsv(int R, int G, int B) {
-        float H=0,S=0,V=0;
-        float var_R = (R / 255);
-        float var_G = (G / 255);
-        float var_B = (B / 255);
+        float H=0f,S=0f,V=0f;
+        float var_R = (R / 255f);
+        float var_G = (G / 255f);
+        float var_B = (B / 255f);
 
         ArrayList<Float> vars = new ArrayList<Float>();
         vars.add(var_R);
@@ -130,16 +140,16 @@ public class ColorConversions {
         else                                    //Chromatic data...
         {
             S = del_Max / var_Max;
-            float del_R = (((var_Max - var_R) / 6 ) + ( del_Max / 2 ) ) / del_Max;
-            float del_G = (((var_Max - var_G) / 6 ) + ( del_Max / 2 ) ) / del_Max;
-            float del_B = (((var_Max - var_B) / 6 ) + ( del_Max / 2 ) ) / del_Max;
+            float del_R = (((var_Max - var_R) / 6f ) + ( del_Max / 2f ) ) / del_Max;
+            float del_G = (((var_Max - var_G) / 6f ) + ( del_Max / 2f ) ) / del_Max;
+            float del_B = (((var_Max - var_B) / 6f ) + ( del_Max / 2f ) ) / del_Max;
 
             if(var_R == var_Max) {
                 H = del_B - del_G;
             } else if (var_G == var_Max) {
-                H = (((float)1) / 3) + del_R - del_B;
+                H = ((1f) / 3f) + del_R - del_B;
             } else if ( var_B == var_Max ) {
-                H = (((float)2) / 3) + del_G - del_R;
+                H = ((2f) / 3f) + del_G - del_R;
             }
 
             if (H < 0) {

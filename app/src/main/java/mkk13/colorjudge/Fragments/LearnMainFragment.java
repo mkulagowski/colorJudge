@@ -22,7 +22,7 @@ public class LearnMainFragment extends Fragment implements View.OnClickListener 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.learnpanel, container, false);
+        View rootView = inflater.inflate(R.layout.learn_main_fragment, container, false);
 
         return rootView;
     }

@@ -33,7 +33,7 @@ public class LearnRandomActivity extends Activity implements View.OnClickListene
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.learnrandompanel);
+        setContentView(R.layout.learn_random_panel);
 
         buttonList.add((Button) findViewById(R.id.learnTL));
         buttonList.add((Button) findViewById(R.id.learnTR));
